@@ -49,3 +49,8 @@ body {
 .small-icon {
   width: 50px;
 }
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
