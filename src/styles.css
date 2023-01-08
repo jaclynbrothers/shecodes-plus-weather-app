@@ -1,0 +1,51 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(166, 226, 229) 0%,
+    rgb(198, 232, 221) 100.2%
+  );
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.main-font {
+  font-size: 20px;
+}
+
+.small-font,
+.forecast-font {
+  font-size: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center-section {
+  text-align: center;
+}
+
+.icon {
+  width: 100px;
+}
+
+.search-icon {
+  padding-top: 47px;
+  width: 30px;
+}
+
+.small-icon {
+  width: 50px;
+}
