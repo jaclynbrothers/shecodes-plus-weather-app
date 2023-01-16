@@ -37,6 +37,11 @@ body {
   text-align: center;
 }
 
+.col-9 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
 .icon {
   width: 100px;
 }
@@ -48,6 +53,20 @@ body {
 
 .small-icon {
   width: 50px;
+}
+
+.capitalize-text {
+  text-transform: capitalize;
+}
+
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  color: rgb(33, 33, 33);
 }
 
 .footer {

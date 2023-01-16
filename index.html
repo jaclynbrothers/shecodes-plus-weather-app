@@ -48,21 +48,27 @@
           <img class="small-icon" src="images/city.png" alt="city icon" />
           <h3 class="small-font">Type in your city:</h3>
           <form id="search-form">
-            <input
-              type="search"
-              class="form-control"
-              autofocus="on"
-              autocomplete="off"
-              placeholder="Type in your city"
-              id="city-input"
-            />
-            <input class="btn btn-primary" type="submit" value="Search" />
-            <input
-              id="current-location-button"
-              class="btn btn-success"
-              type="submit"
-              value="Current"
-            />
+            <div class="row d-flex justify-content-center">
+              <div class="col-9">
+                <input
+                  type="search"
+                  class="form-control"
+                  autofocus="on"
+                  autocomplete="off"
+                  placeholder="Type in your city"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input class="btn btn-primary" type="submit" value="Search" />
+                <input
+                  id="current-location-button"
+                  class="btn btn-success"
+                  type="submit"
+                  value="Current"
+                />
+              </div>
+            </div>
           </form>
         </div>
         <!-- <div class="col">
@@ -106,16 +112,24 @@
       </div>
       <div class="row center-section">
         <div class="col">
-          <img class="icon" src="images/sunny.png" alt="sunny icon" />
+          <img
+            id="icon"
+            class="icon"
+            src="images/sunny.png"
+            alt="weather icon"
+          />
           <h2 class="main-font bold">
             Description:
             <br />
-            <span id="description"> </span>
+            <span id="description" class="capitalize-text"> </span>
           </h2>
           <img class="icon" src="images/temp.svg" alt="temp icon" />
           <h2 class="main-font bold">Temperature:</h2>
           <span id="temperature" class="main-font bold"></span
-          ><span class="main-font bold units">°C</span>
+          > <span class="main-font bold units"
+            ><a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a></span
+          >
           <!-- <span class="main-font bold units">
               <a id="celsius-link" href="#">°C</a> | <a id="fahrenheit-link" href="#">°F</a>
             </span> -->
@@ -266,8 +280,11 @@
       </div>
       <footer class="footer">
         Picture Symbols from
-        <a href="https://www.opensymbols.org/">Open Symbols</a> |
-        <a href="https://github.com/jaclynbrothers/shecodes-plus-weather-app"
+        <a href="https://www.opensymbols.org/" target="_blank">Open Symbols</a>
+        |
+        <a
+          href="https://github.com/jaclynbrothers/shecodes-plus-weather-app"
+          target="_blank"
           >Open-Source Code</a
         >
         by Jaclyn Brothers
