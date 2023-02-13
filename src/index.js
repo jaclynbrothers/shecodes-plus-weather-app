@@ -49,11 +49,6 @@ function displayForecast(response) {
       alt="weather icon"
     />
     <h3 class="forecast-font weather-forecast-description">${forecastDay.weather[0].description}</h3>
-    <img
-      class="icon small-icon"
-      src="images/temp.svg"
-      alt="temperature icon"
-    />
     <h3 class="forecast-font weather-forecast-temperature">
       Temperature:
       <span class="weather-forecast-temperature-max">${
