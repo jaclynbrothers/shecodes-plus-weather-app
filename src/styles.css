@@ -46,13 +46,22 @@ body {
   width: 100px;
 }
 
+.big-icon-spacing {
+  margin-top: 20px;
+}
+
+.font-spacing {
+  margin-top: 10px;
+}
+
 .search-icon {
   padding-top: 47px;
   width: 30px;
 }
 
 .small-icon {
-  width: 50px;
+  margin-top: 10px;
+  width: 40px;
 }
 
 .capitalize-text {
