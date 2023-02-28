@@ -20,7 +20,15 @@ function formatDay(timestamp) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   return days[day];
 }
 
@@ -33,10 +41,9 @@ function displayForecast(response) {
 
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
-
-    forecastHTML =
-      forecastHTML +
-      `
+      forecastHTML =
+        forecastHTML +
+        `
   <div class="col">
     <h3 class="forecast-font weather-forecast-date font-spacing">${formatDay(
       forecastDay.dt
@@ -48,15 +55,17 @@ function displayForecast(response) {
       }@2x.png"
       alt="weather icon"
     />
-    <h3 class="forecast-font weather-forecast-description">${forecastDay.weather[0].description}</h3>
+    <h3 class="forecast-font weather-forecast-description">${
+      forecastDay.weather[0].description
+    }</h3>
     <h3 class="forecast-font weather-forecast-temperature">
       Temperature:
-      <span class="weather-forecast-temperature-max">${
-        Math.round(forecastDay.temp.max)
-      }°</span>
-      <span class="weather-forecast-temperature-min">${
-        Math.round(forecastDay.temp.min)
-      }°</span>
+      <span class="weather-forecast-temperature-max">${Math.round(
+        forecastDay.temp.max
+      )}°</span>
+      <span class="weather-forecast-temperature-min">${Math.round(
+        forecastDay.temp.min
+      )}°</span>
     </h3>
   </div>
   `;
@@ -115,6 +124,10 @@ function displayWeatherCondition(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
+
+  //reset active links
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 // Search Default City "New York"
